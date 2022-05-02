@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="./Document_files/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Document_files/css2" rel="stylesheet">
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Document_files/main.css">
+    <title>Science på Rys</title>
+</head>
+<body onload="carousel()">
+    <div id="main">
+        <div id="head"> 
+            <div id="over">        Science på Rysensteen        </div>
+        </div>
+
+
+        <div class="billede">
+            <div id="slideshow">
+
+                <img class="mySlides" src="./Document_files/kemi.jpeg" style="display: block;">
+                <img class="mySlides" src="./Document_files/ADAM.jpeg" style="display: none;">
+            </div>
+        </div>
+
+        <div id="left">
+                <div class="elev" id="GCP" onmouseover="show(&#39;G&#39;)" onmouseout="show(&#39;d&#39;)">
+                     <div class="ebillede">  </div>
+                      <div class="text">
+                        <h1>Internationalt fokus</h1>
+                        <p>"På Rysensteen har jeg lært om min rolle som en Global Citizen og om hvordan Science kan hjælpe med at løse klimakrisen."</p> <p> - Clara 3.X</p>
+                      </div> 
+                </div>
+                <div class="elev" id="Boston" onmouseover="show(&#39;B&#39;)" onmouseout="show(&#39;d&#39;)">
+                    <div class="ebillede">  </div>
+                     <div class="text">
+                        <h1>Fede science studieture</h1>
+                        <p>"Som FYMA klasse skal vi til boston og besøge det prestigefyldte tekniske universitet MIT."</p> <p> - Tayo 3.Y</p>
+                     </div> 
+                </div>
+                <div class="elev" id="lærer" onmouseover="show(&#39;L&#39;)" onmouseout="show(&#39;d&#39;)">
+                    <div class="ebillede">  </div>
+                     <div class="text">
+                        <h1>Dygtige sciencelærere</h1>
+                        <p>"Vores science lærere er de bedste i landet! Mega kvalificerede, dygtige formidlere, og så skader det jo ikke at vores mat lærer laver eksamensopgaverne"</p>
+                    </div> 
+                </div>
+         </div>
+         <div id="right">
+             <div id="d" class="stuff">
+                <h1>Hvad er science på Rys?</h1>
+                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+             </div>
+             <div id="G" style="display: none;" class="stuff">
+                <h1>Rysensteens GCP program</h1>
+                <p>123</p>
+             </div>
+             <div id="B" style="display: none;" class="stuff">
+                <h1>Studietur til Boston</h1>
+             </div>
+             <div id="L" style="display: none;" class="stuff">
+                <h1>Landets højeste gennemsnit</h1>
+             </div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

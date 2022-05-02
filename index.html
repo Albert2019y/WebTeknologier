@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;600&display=swap" rel="stylesheet">
+    
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "scss/main.css">
+    <title>Science på Rys</title>
+</head>
+<body onload="carousel()">
+    <div id ="main">
+        <div id="head"> 
+            <div  id = "over">        Science på Rysensteen        </div>
+        </div>
+
+
+        <div class="billede">
+            <div id="slideshow">
+
+                <img class="mySlides" src="./imgs/Science1.jpeg">
+                <img class="mySlides" src="./imgs/Science2.jpeg">
+                <img class="mySlides" src="./imgs/Science3.jpeg">
+                <img class="mySlides" src="./imgs/Science4.jpeg">
+                <img class="mySlides" src="./imgs/Science5.jpeg">
+            </div>
+        </div>
+
+        <div id="left">
+                <div class = "elev" id ="GCP" onmouseover="show('G')" onmouseout="show('d')">
+                     <div class ="ebillede">  </div>
+                      <div class ="text">
+                        <h1>Internationalt fokus</h1>
+                        <p>"På Rysensteen har jeg lært om min rolle som en Global Citizen og om hvordan Science kan hjælpe med at løse klimakrisen."</p> <p> - Clara 3.X</p>
+                      </div> 
+                </div>
+                <div class = "elev" id="Boston"  onmouseover="show('B')" onmouseout="show('d')">
+                    <div class ="ebillede">  </div>
+                     <div class ="text">
+                        <h1>Fede science studieture</h1>
+                        <p>"Som FYMA klasse skal vi til boston og besøge det prestigefyldte tekniske universitet MIT."</p> <p> - Tayo 3.Y</p>
+                     </div> 
+                </div>
+                <div class = "elev" id="lærer" onmouseover="show('L')" onmouseout="show('d')">
+                    <div class ="ebillede">  </div>
+                     <div class ="text">
+                        <h1>Dygtige sciencelærere</h1>
+                        <p>"Vores science lærere er de bedste i landet! Mega kvalificerede, dygtige formidlere og forbredte. Det er altså ikke sådan på andre gym."</p> <p> - Julie 3.T</p>
+                    </div> 
+                </div>
+         </div>
+         <div id="right">
+             <div id="d" class="stuff">
+                <h1>Hvad er science på Rys?</h1>
+                <p>Science spiller en central rolle på Rysensteen gymnasium hvor selv rektor har baggrund i science. De naturvidenskabelige fag har deres egne bygninger hvilket gør at science eleverne har et tæt forhold på tværs af spor, årgange og endda også med lærerne. Da science fagene ligger så tæt sammen er der også god mulighed for tværfaglige science projekter. Men bare fordi science ligger i egne bygninger betyder det ikke at science ikke er til stede i de almene bygninger hvor man på væggene finder billeder af bla. Albert Einstein, Niels Bohr og Elon Musk. Derudover er der rig mulighed for at deltage ekstra Science så som Drughunterdysten, ATU eller forskerspirer.</p>
+             </div>
+             <div id="G" style="display: none;" class="stuff">
+                <h1>Rysensteens GCP program</h1>
+                <p>Rysensteen har en GCP program som står for Global Citizenship Programme. Her lærer man om sin rolle som global verdensborger. Her er der meget fokus på klimaet. Derfor spiller Science naturligvis en central del i GCP hvor vi lærer om hvordan science kan bruges innovativt til at mindske CO2. Derudover har vi også i informatik arbejdet sammen med det europæiske rumagentur hvor vi bla. undersøgte hvordan man kan finde plasticøer i havet hvilket ville støtte det 14. verdensmål om at bevare livet i havet.</p>
+             </div>
+             <div id="B" style="display: none;" class="stuff">
+                <h1>Boston, Singapoore og New York</h1>
+                <p>Som scienceelev kommer bredt rund i verden med fokus på at se hvordan videnskab bruges og læres i resten af verden. I singapoore lærer man om de nyeste fremskridt indenfor genteknologien som bruges industrielt til madproduktion. I Boston kommer man på besøg på verdens bedste tekniske universitet MIT. På disse turer bor man hos en værtsfamilie og lærer da kulturen på første hånd. Derudover får man også selv en elev fra ens rejsedestination som man skal tage sig af på deres besøg i København. Man får altså på Rys venskaber på tværs af kontinenter.</p>
+             </div>
+             <div id="L" style="display: none;" class="stuff">
+                <h1>Landets højeste gennemsnit</h1>
+             </div>
+        </div>
+    </div>
+
+    <footer>
+       <div id ="logo">  <a href="https://rysensteen.dk/vb/studieretningsudbud/science"><img src="https://rysensteen.dk/themes/rysensteen2019/images/footerlogo.svg" id = "logoimg"> </a> </div>
+        <div id="knap">
+        </div>
+    </footer>
+
+</body>
+</html>
